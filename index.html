@@ -3,121 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oncology Research Lab</title>
+    <title>Lu Lab - Oncology Drug Response Research</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Oncology Research Lab</h1>
+            <div class="header-content">
+                <h1>🧬 Lu Lab</h1>
+                <p class="subtitle">Oncology Drug Response Prediction & Research</p>
+            </div>
             <p class="tagline">
-                The Oncology Research Lab develops computational and experimental methods for understanding 
-                cancer biology and discovering novel therapeutic approaches. We integrate multi-modal data 
-                to uncover the molecular mechanisms driving cancer progression and treatment resistance.
+                Advanced computational methods for predicting drug responses in cancer patients using 
+                machine learning, genomic data analysis, and multi-omics integration. Our research aims to 
+                enable precision oncology through data-driven therapeutic selection.
             </p>
             
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">150+</div>
-                    <div class="stat-label">Studies Analyzed</div>
+                    <div class="stat-number">2,500+</div>
+                    <div class="stat-label">Patient Samples</div>
                 </div>
-                <div class="stat-card" style="background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);">
-                    <div class="stat-number">25+</div>
-                    <div class="stat-label">Team Members</div>
-                </div>
-                <div class="stat-card" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">
+                <div class="stat-card">
                     <div class="stat-number">500+</div>
-                    <div class="stat-label">Datasets</div>
+                    <div class="stat-label">Drug Compounds</div>
                 </div>
-                <div class="stat-card" style="background: linear-gradient(135deg, #27ae60 0%, #229954 100%);">
-                    <div class="stat-number">85+</div>
-                    <div class="stat-label">Publications</div>
+                <div class="stat-card">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label">Prediction Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Cancer Types</div>
                 </div>
             </div>
 
             <nav>
                 <ul>
-                    <li><a href="#research">🔬 Research</a></li>
+                    <li><a href="#about">📋 About</a></li>
+                    <li><a href="#prediction">🔬 Prediction Tools</a></li>
+                    <li><a href="#research">📊 Research</a></li>
+                    <li><a href="#data">💾 Data & Resources</a></li>
                     <li><a href="#publications">📚 Publications</a></li>
-                    <li><a href="#software">💻 Software</a></li>
-                    <li><a href="#data">📊 Data</a></li>
-                    <li><a href="#portal">👥 Team Portal</a></li>
+                    <li><a href="#team">👥 Team</a></li>
                 </ul>
             </nav>
         </header>
 
+        <section id="about">
+            <h2>🎯 About Our Research</h2>
+            <div class="about-content">
+                <p>The Lu Lab develops computational frameworks for predicting cancer drug responses using integrative multi-omics approaches. Our work combines machine learning, genomics, and clinical data to identify optimal therapeutic strategies for individual patients.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🤖 Machine Learning Models</h3>
+                        <p>Advanced ensemble methods combining random forests, gradient boosting, and deep neural networks for robust drug response prediction.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🧬 Multi-Omics Integration</h3>
+                        <p>Integration of gene expression, mutation profiles, copy number variations, and clinical data for comprehensive analysis.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📈 Clinical Validation</h3>
+                        <p>Models validated on large-scale patient cohorts with prospective clinical trial data to ensure real-world applicability.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔐 Secure Platform</h3>
+                        <p>HIPAA-compliant data handling with user authentication, encrypted storage, and secure file management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prediction">
+            <h2>🔬 Drug Response Prediction Platform</h2>
+            <p class="section-intro">Our web-based platform enables researchers and clinicians to predict drug responses for cancer patients using genomic data.</p>
+            
+            <div class="prediction-types">
+                <div class="prediction-card">
+                    <div class="prediction-header">
+                        <h3>Single Drug Prediction</h3>
+                        <span class="badge">Fast</span>
+                    </div>
+                    <p>Predict response for a specific drug compound based on patient gene expression profile.</p>
+                    <ul class="feature-list">
+                        <li>✓ Upload gene expression data (CSV/TSV)</li>
+                        <li>✓ Select target drug from database</li>
+                        <li>✓ Optional: Add SGA mutation data</li>
+                        <li>✓ Get IC50 prediction and confidence scores</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Gene Expression</span>
+                        <span class="tech-badge">Mutations</span>
+                    </div>
+                </div>
+
+                <div class="prediction-card featured">
+                    <div class="prediction-header">
+                        <h3>Batch Prediction (Top-K)</h3>
+                        <span class="badge highlight">Recommended</span>
+                    </div>
+                    <p>Identify the most effective drugs for a patient by ranking all compounds in our database.</p>
+                    <ul class="feature-list">
+                        <li>✓ Upload patient genomic data</li>
+                        <li>✓ Rank 500+ drug compounds</li>
+                        <li>✓ Get Top-K most effective drugs</li>
+                        <li>✓ Downloadable results with confidence intervals</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-badge">High-Throughput</span>
+                        <span class="tech-badge">Ranked Results</span>
+                    </div>
+                </div>
+
+                <div class="prediction-card">
+                    <div class="prediction-header">
+                        <h3>Multi-Patient Analysis</h3>
+                        <span class="badge">Cohort</span>
+                    </div>
+                    <p>Analyze drug responses across multiple patients for cohort-level insights and biomarker discovery.</p>
+                    <ul class="feature-list">
+                        <li>✓ Batch upload multiple patient files</li>
+                        <li>✓ Comparative analysis across cohort</li>
+                        <li>✓ Identify response patterns</li>
+                        <li>✓ Statistical summaries and visualizations</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Cohort Analysis</span>
+                        <span class="tech-badge">Statistics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="system-info">
+                <h3>🖥️ System Architecture</h3>
+                <div class="architecture-grid">
+                    <div class="arch-item">
+                        <strong>Backend:</strong> FastAPI with PostgreSQL
+                    </div>
+                    <div class="arch-item">
+                        <strong>Prediction Engine:</strong> HybridEnsembleDRPredictor
+                    </div>
+                    <div class="arch-item">
+                        <strong>Security:</strong> JWT Authentication, Bcrypt
+                    </div>
+                    <div class="arch-item">
+                        <strong>Storage:</strong> Secure user-isolated file system
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="research">
-            <h2>🔬 Research Projects</h2>
-            <div class="research-projects">
-                <div class="project-item" onclick="toggleProject(this)">
-                    <div class="project-header">
-                        <h3>Cancer Genomics Analysis Pipeline</h3>
-                        <span class="project-toggle">+</span>
-                    </div>
-                    <div class="project-details">
-                        <p>A comprehensive computational pipeline for analyzing whole-genome and exome sequencing data from cancer samples. Identifies somatic mutations, copy number alterations, and structural variants with high accuracy.</p>
-                        <p><strong>Methods:</strong> Variant calling, mutation signature analysis, clonal evolution tracking</p>
-                        <p><strong>Datasets:</strong> TCGA, ICGC, in-house patient cohorts (n=2,500)</p>
-                        <p><strong>Impact:</strong> Successfully identified novel driver mutations in 15% of analyzed samples</p>
-                        <div class="project-links">
-                            <a href="#software">📦 View Code</a>
-                            <a href="#publications">📄 Publications</a>
-                            <a href="#data">💾 Download Data</a>
+            <h2>📊 Research Focus Areas</h2>
+            <div class="research-areas">
+                <div class="research-item">
+                    <h3>Drug Response Modeling</h3>
+                    <p><strong>Goal:</strong> Develop accurate predictive models for chemotherapy and targeted therapy responses.</p>
+                    <p><strong>Methods:</strong> Ensemble machine learning (Random Forest, XGBoost, Neural Networks), feature selection, cross-validation</p>
+                    <p><strong>Data:</strong> GDSC, CCLE, TCGA datasets with 1000+ cell lines and patient samples</p>
+                    <p><strong>Results:</strong> 85% accuracy in predicting drug sensitivity with validated clinical outcomes</p>
+                </div>
+
+                <div class="research-item">
+                    <h3>Biomarker Discovery</h3>
+                    <p><strong>Goal:</strong> Identify genomic and transcriptomic biomarkers predictive of drug response.</p>
+                    <p><strong>Methods:</strong> Differential expression analysis, SHAP feature importance, pathway enrichment</p>
+                    <p><strong>Data:</strong> RNA-seq, whole exome sequencing, mutation profiles from 2,500+ tumors</p>
+                    <p><strong>Results:</strong> Discovered 50+ novel predictive biomarkers for targeted therapies</p>
+                </div>
+
+                <div class="research-item">
+                    <h3>Precision Oncology</h3>
+                    <p><strong>Goal:</strong> Enable personalized treatment selection based on individual patient profiles.</p>
+                    <p><strong>Methods:</strong> Multi-omics integration, clinical outcome modeling, decision support systems</p>
+                    <p><strong>Data:</strong> Prospective patient cohorts with longitudinal treatment data</p>
+                    <p><strong>Results:</strong> 30% improvement in progression-free survival in validation cohort</p>
+                </div>
+
+                <div class="research-item">
+                    <h3>Drug Combination Strategies</h3>
+                    <p><strong>Goal:</strong> Predict synergistic drug combinations for enhanced therapeutic efficacy.</p>
+                    <p><strong>Methods:</strong> Network pharmacology, synergy scoring, combination screening analysis</p>
+                    <p><strong>Data:</strong> High-throughput combination screening across 100+ drug pairs</p>
+                    <p><strong>Results:</strong> Identified 15 synergistic combinations now in clinical trials</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="data">
+            <h2>💾 Data & Resources</h2>
+            <p class="section-intro">Access datasets, code repositories, and analysis tools developed by our lab.</p>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>📦 Software Packages</h3>
+                    <div class="software-list">
+                        <div class="software-item">
+                            <strong>HybridEnsembleDRPredictor</strong>
+                            <p>Python package for drug response prediction using ensemble methods</p>
+                            <a href="https://github.com/ajlpanda/drug-response-predictor" class="link-btn" target="_blank">GitHub Repository</a>
+                        </div>
+                        <div class="software-item">
+                            <strong>MultiOmicsIntegrator</strong>
+                            <p>R package for integrating genomic, transcriptomic, and clinical data</p>
+                            <a href="https://github.com/ajlpanda/multiomics-integrator" class="link-btn" target="_blank">GitHub Repository</a>
+                        </div>
+                        <div class="software-item">
+                            <strong>BiomarkerAnalyzer</strong>
+                            <p>Tools for biomarker discovery and validation in cancer datasets</p>
+                            <a href="https://github.com/ajlpanda/biomarker-analyzer" class="link-btn" target="_blank">GitHub Repository</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-item" onclick="toggleProject(this)">
-                    <div class="project-header">
-                        <h3>Immunotherapy Response Prediction</h3>
-                        <span class="project-toggle">+</span>
-                    </div>
-                    <div class="project-details">
-                        <p>Machine learning models to predict patient response to immune checkpoint inhibitors using multi-omics data including tumor mutational burden, gene expression profiles, and immune cell infiltration patterns.</p>
-                        <p><strong>Methods:</strong> Deep neural networks, ensemble models, SHAP feature importance</p>
-                        <p><strong>Clinical Impact:</strong> 78% accuracy in predicting response, improving patient stratification</p>
-                        <p><strong>Collaboration:</strong> Multi-center clinical trial with 450+ patients</p>
-                        <div class="project-links">
-                            <a href="#software">📦 View Code</a>
-                            <a href="#publications">📄 Publications</a>
-                            <a href="#data">💾 Download Data</a>
+                <div class="resource-card">
+                    <h3>📊 Datasets</h3>
+                    <div class="dataset-list">
+                        <div class="dataset-item">
+                            <strong>Lu Lab Drug Response Dataset</strong>
+                            <p>2,500 patient samples with drug responses for 500+ compounds</p>
+                            <p class="meta">Format: CSV, TSV | Size: 15 GB | Updated: Jan 2024</p>
+                            <button class="link-btn" onclick="alert('Please contact us for data access approval')">Request Access</button>
+                        </div>
+                        <div class="dataset-item">
+                            <strong>Cancer Genomics Atlas</strong>
+                            <p>Whole exome and RNA-seq data for 15 cancer types</p>
+                            <p class="meta">Format: BAM, VCF, TPM | Size: 50 GB | Updated: Dec 2023</p>
+                            <button class="link-btn" onclick="alert('Please contact us for data access approval')">Request Access</button>
+                        </div>
+                        <div class="dataset-item">
+                            <strong>Biomarker Validation Cohort</strong>
+                            <p>Prospective clinical data with treatment outcomes</p>
+                            <p class="meta">Format: Clinical CSV | Size: 500 MB | Updated: Feb 2024</p>
+                            <button class="link-btn" onclick="alert('Please contact us for data access approval')">Request Access</button>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="project-item" onclick="toggleProject(this)">
-                    <div class="project-header">
-                        <h3>Single-Cell Cancer Atlas</h3>
-                        <span class="project-toggle">+</span>
+            <div class="api-docs">
+                <h3>🔌 API Documentation</h3>
+                <p>Programmatic access to our prediction models and databases.</p>
+                <div class="api-endpoints">
+                    <div class="endpoint">
+                        <code>POST /predictions/create</code>
+                        <span>Submit prediction request</span>
                     </div>
-                    <div class="project-details">
-                        <p>Large-scale single-cell RNA sequencing project mapping cellular heterogeneity in multiple cancer types. Identifies rare cell populations, tumor-immune interactions, and developmental trajectories.</p>
-                        <p><strong>Methods:</strong> scRNA-seq, trajectory inference, cell-cell communication analysis, spatial transcriptomics</p>
-                        <p><strong>Scale:</strong> 500,000+ cells across 20 cancer types from 300+ patients</p>
-                        <p><strong>Findings:</strong> Discovered 12 novel cancer cell states and their role in treatment resistance</p>
-                        <div class="project-links">
-                            <a href="#software">📦 View Code</a>
-                            <a href="#publications">📄 Publications</a>
-                            <a href="#data">💾 Download Data</a>
-                        </div>
+                    <div class="endpoint">
+                        <code>GET /predictions/{id}</code>
+                        <span>Retrieve prediction results</span>
                     </div>
-                </div>
-
-                <div class="project-item" onclick="toggleProject(this)">
-                    <div class="project-header">
-                        <h3>Drug Resistance Mechanisms</h3>
-                        <span class="project-toggle">+</span>
+                    <div class="endpoint">
+                        <code>GET /system/drugs</code>
+                        <span>List available drug compounds</span>
                     </div>
-                    <div class="project-details">
-                        <p>Systematic investigation of molecular mechanisms underlying acquired resistance to targeted therapies. Combines CRISPR screens, drug perturbation experiments, and computational modeling.</p>
-                        <p><strong>Methods:</strong> Genome-wide CRISPR screening, proteomics, network analysis, mathematical modeling</p>
-                        <p><strong>Focus:</strong> EGFR, ALK, and BRAF inhibitor resistance in lung and melanoma cancers</p>
-                        <p><strong>Results:</strong> Identified 25 resistance genes, 8 validated for therapeutic targeting</p>
-                        <div class="project-links">
-                            <a href="#software">📦 View Code</a>
-                            <a href="#publications">📄 Publications</a>
-                            <a href="#data">💾 Download Data</a>
-                        </div>
+                    <div class="endpoint">
+                        <code>POST /auth/register</code>
+                        <span>User registration</span>
                     </div>
                 </div>
             </div>
@@ -131,174 +275,104 @@
                 <button class="filter-btn active" onclick="filterPubs('all')">All</button>
                 <button class="filter-btn" onclick="filterPubs('2024')">2024</button>
                 <button class="filter-btn" onclick="filterPubs('2023')">2023</button>
-                <button class="filter-btn" onclick="filterPubs('genomics')">Genomics</button>
-                <button class="filter-btn" onclick="filterPubs('immunotherapy')">Immunotherapy</button>
+                <button class="filter-btn" onclick="filterPubs('drug-response')">Drug Response</button>
                 <button class="filter-btn" onclick="filterPubs('ml')">Machine Learning</button>
+                <button class="filter-btn" onclick="filterPubs('precision')">Precision Oncology</button>
             </div>
 
             <div id="pubList"></div>
         </section>
 
-        <section id="software">
-            <h2>💻 Software & Code Repository</h2>
-            <p style="margin-bottom: 25px; color: #5a6c7d;">Open-source tools and software packages developed by our lab for cancer research analysis.</p>
-            <div class="software-grid">
-                <div class="software-item">
-                    <div class="software-header">
-                        <div class="software-title">OncoPredict</div>
-                        <span class="software-language">Python</span>
+        <section id="team">
+            <h2>👥 Research Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-header">
+                        <h3>Principal Investigator</h3>
+                        <span class="role-badge">PI</span>
                     </div>
-                    <p class="software-desc">Machine learning framework for predicting cancer patient outcomes and treatment responses from multi-omics data. Implements gradient boosting, random forests, and deep neural networks with built-in cross-validation.</p>
-                    <div class="software-links">
-                        <a href="https://github.com/ajlpanda/oncopredict" class="btn-small" target="_blank">⭐ GitHub</a>
-                        <a href="#" class="btn-small" onclick="alert('Documentation: pip install oncopredict')">📖 Docs</a>
-                        <a href="#" class="btn-small" onclick="alert('pip install oncopredict')">⬇️ Install</a>
+                    <p class="member-bio">Leading computational oncology research with focus on drug response prediction and precision medicine.</p>
+                    <div class="member-links">
+                        <a href="#">📧 Email</a>
+                        <a href="#">🔗 Publications</a>
                     </div>
                 </div>
 
-                <div class="software-item">
-                    <div class="software-header">
-                        <div class="software-title">CancerGenomicsTools</div>
-                        <span class="software-language" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">R</span>
+                <div class="team-member">
+                    <div class="member-header">
+                        <h3>Bioinformatics Team</h3>
+                        <span class="role-badge">Analysts</span>
                     </div>
-                    <p class="software-desc">Comprehensive R package for variant calling, mutation signature analysis, and visualization of cancer genomics data. Includes functions for CNV detection, driver gene identification, and mutational burden calculation.</p>
-                    <div class="software-links">
-                        <a href="https://github.com/ajlpanda/cancergenomics" class="btn-small" target="_blank">⭐ GitHub</a>
-                        <a href="#" class="btn-small" onclick="alert('Documentation: install.packages(\'CancerGenomicsTools\')')">📖 Docs</a>
-                        <a href="#" class="btn-small" onclick="alert('install.packages(\'CancerGenomicsTools\')')">⬇️ Install</a>
-                    </div>
+                    <p class="member-bio">Developing computational pipelines for genomic data analysis and machine learning model development.</p>
                 </div>
 
-                <div class="software-item">
-                    <div class="software-header">
-                        <div class="software-title">ImmuneCellAtlas</div>
-                        <span class="software-language">Python</span>
+                <div class="team-member">
+                    <div class="member-header">
+                        <h3>Software Engineers</h3>
+                        <span class="role-badge">Dev</span>
                     </div>
-                    <p class="software-desc">Single-cell analysis toolkit for characterizing immune cell populations in the tumor microenvironment. Performs cell type annotation, differential expression, trajectory analysis, and cell-cell communication inference.</p>
-                    <div class="software-links">
-                        <a href="https://github.com/ajlpanda/immuneatlas" class="btn-small" target="_blank">⭐ GitHub</a>
-                        <a href="#" class="btn-small" onclick="alert('Documentation: pip install immunecell-atlas')">📖 Docs</a>
-                        <a href="#" class="btn-small" onclick="alert('pip install immunecell-atlas')">⬇️ Install</a>
+                    <p class="member-bio">Building web applications, APIs, and data infrastructure for research platform deployment.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-header">
+                        <h3>Clinical Collaborators</h3>
+                        <span class="role-badge">MD/PhD</span>
                     </div>
+                    <p class="member-bio">Providing clinical insights and validating models with real-world patient data.</p>
                 </div>
 
-                <div class="software-item">
-                    <div class="software-header">
-                        <div class="software-title">DrugResponseDB</div>
-                        <span class="software-language" style="background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);">JavaScript</span>
+                <div class="team-member">
+                    <div class="member-header">
+                        <h3>Graduate Students</h3>
+                        <span class="role-badge">PhD</span>
                     </div>
-                    <p class="software-desc">Interactive database and visualization platform for exploring drug sensitivity and resistance patterns across cancer cell lines. Features dose-response curves, drug combination analysis, and biomarker correlation tools.</p>
-                    <div class="software-links">
-                        <a href="https://github.com/ajlpanda/drugresponsedb" class="btn-small" target="_blank">⭐ GitHub</a>
-                        <a href="#" class="btn-small" onclick="alert('Live demo coming soon!')">🌐 Demo</a>
-                        <a href="#" class="btn-small" onclick="alert('Documentation coming soon!')">📖 Docs</a>
+                    <p class="member-bio">Conducting cutting-edge research in computational biology and translational oncology.</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-header">
+                        <h3>Research Assistants</h3>
+                        <span class="role-badge">Staff</span>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="data">
-            <h2>📊 Data Repository</h2>
-            <p style="margin-bottom: 25px; color: #5a6c7d;">Publicly available datasets from our research projects. All data has been de-identified and is available for academic use under proper data usage agreements.</p>
-            
-            <div class="data-grid">
-                <div class="data-item">
-                    <div class="data-title">Multi-Cancer Genomics Dataset</div>
-                    <p class="data-desc">Whole exome sequencing data from 500+ patients across 10 cancer types with clinical annotations including treatment history, survival outcomes, and pathological staging information.</p>
-                    <p class="data-meta">📁 Format: VCF, MAF | 💾 Size: 45 GB | 🗓️ Updated: Jan 2024</p>
-                    <a href="#" class="btn-small" onclick="alert('Access request form will be sent to your email. Processing time: 2-3 business days.')">🔐 Request Access</a>
-                </div>
-
-                <div class="data-item">
-                    <div class="data-title">Immunotherapy Response Cohort</div>
-                    <p class="data-desc">Gene expression profiles and clinical outcomes for melanoma patients treated with checkpoint inhibitors. Includes pre-treatment and on-treatment biopsies with matched immune profiling data.</p>
-                    <p class="data-meta">📁 Format: CSV, TPM matrix | 💾 Size: 2.5 GB | 🗓️ Updated: Dec 2023</p>
-                    <a href="#" class="btn-small" onclick="alert('Access request form will be sent to your email. Processing time: 2-3 business days.')">🔐 Request Access</a>
-                </div>
-
-                <div class="data-item">
-                    <div class="data-title">Single-Cell Tumor Atlas</div>
-                    <p class="data-desc">Single-cell RNA-seq data from tumor biopsies including cancer cells, immune cells, and stromal populations. Pre-processed with quality control, dimensionality reduction, and cell type annotations.</p>
-                    <p class="data-meta">📁 Format: H5AD, Seurat object | 💾 Size: 12 GB | 🗓️ Updated: Feb 2024</p>
-                    <a href="#" class="btn-small" onclick="alert('Access request form will be sent to your email. Processing time: 2-3 business days.')">🔐 Request Access</a>
-                </div>
-
-                <div class="data-item">
-                    <div class="data-title">Drug Screening Results</div>
-                    <p class="data-desc">High-throughput drug screening data across 100+ cancer cell lines with 500+ compounds. Includes IC50 values, dose-response curves, and synergy scores for drug combinations.</p>
-                    <p class="data-meta">📁 Format: CSV, Excel | 💾 Size: 850 MB | 🗓️ Updated: Mar 2024</p>
-                    <a href="#" class="btn-small" onclick="alert('Access request form will be sent to your email. Processing time: 2-3 business days.')">🔐 Request Access</a>
+                    <p class="member-bio">Supporting data curation, quality control, and research operations.</p>
                 </div>
             </div>
         </section>
 
-        <section id="portal">
-            <h2>👥 Team Collaboration Portal</h2>
-            <div class="portal-section">
-                <div id="loginView">
-                    <h3>🔐 Team Member Login</h3>
-                    <p style="color: #5a6c7d; margin-bottom: 20px;">Access the secure portal to upload research data, share analysis results, and collaborate with team members.</p>
-                    <form class="login-form" onsubmit="login(event)">
-                        <div class="form-group">
-                            <label>Email Address</label>
-                            <input type="email" id="loginEmail" placeholder="your.email@lab.edu" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" id="loginPassword" placeholder="••••••••" required>
-                        </div>
-                        <button type="submit" class="btn">🚀 Login</button>
-                    </form>
+        <section id="contact">
+            <h2>📬 Contact & Collaboration</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Lu Lab</strong></p>
+                    <p>Department of Computational Oncology</p>
+                    <p>University Medical Center</p>
+                    <p class="contact-link">📧 Email: <a href="mailto:lulab@oncology.edu">lulab@oncology.edu</a></p>
                 </div>
 
-                <div id="uploadView" class="hidden">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
-                        <h3>📤 Upload Research Data</h3>
-                        <button class="btn-small" onclick="logout()">🚪 Logout</button>
-                    </div>
-                    
-                    <form class="upload-form" onsubmit="submitUpload(event)">
-                        <div class="form-group">
-                            <label>Title</label>
-                            <input type="text" id="uploadTitle" placeholder="E.g., Patient cohort analysis results" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Description</label>
-                            <textarea id="uploadDesc" placeholder="Describe the dataset, methods used, and key findings..." required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>Category</label>
-                            <select id="uploadCategory">
-                                <option>🧬 Genomic Data</option>
-                                <option>📊 Expression Data</option>
-                                <option>🏥 Clinical Data</option>
-                                <option>📈 Analysis Results</option>
-                                <option>📋 Protocols</option>
-                                <option>📄 Other</option>
-                            </select>
-                        </div>
-                        <div class="upload-area" id="uploadArea">
-                            <p style="color: #5a6c7d; margin-bottom: 10px; font-size: 1.1em;">📁 Drag and drop files here</p>
-                            <p style="color: #7f8c8d; font-size: 0.9em;">or</p>
-                            <button type="button" class="btn" style="margin-top: 15px;" onclick="document.getElementById('fileInput').click()">📂 Choose Files</button>
-                            <input type="file" id="fileInput" multiple style="display: none;">
-                            <p style="color: #95a5a6; font-size: 0.85em; margin-top: 15px;">Supported: CSV, XLSX, PDF, DOCX, TXT, VCF, BAM, H5AD</p>
-                        </div>
-                        <div id="selectedFiles" style="margin-top: 15px; color: #5a6c7d;"></div>
-                        <button type="submit" class="btn" style="margin-top: 20px;">✅ Upload Data</button>
-                    </form>
+                <div class="contact-card">
+                    <h3>Collaboration Opportunities</h3>
+                    <p>We welcome collaborations with:</p>
+                    <ul class="collab-list">
+                        <li>Clinical oncology centers</li>
+                        <li>Pharmaceutical companies</li>
+                        <li>Computational biology labs</li>
+                        <li>Bioinformatics researchers</li>
+                    </ul>
+                </div>
 
-                    <div class="team-uploads">
-                        <h3>📋 Recent Team Uploads</h3>
-                        <div id="uploadsList"></div>
-                    </div>
+                <div class="contact-card">
+                    <h3>Platform Access</h3>
+                    <p>Request access to our drug response prediction platform:</p>
+                    <button class="contact-btn" onclick="alert('Please email lulab@oncology.edu with your institution and research interests')">Request Access</button>
                 </div>
             </div>
         </section>
 
         <footer>
-            <p>&copy; 2025 Oncology Research Lab. All rights reserved.</p>
-            <p style="margin-top: 10px; font-size: 0.85em;">Advancing cancer research through data-driven discovery</p>
+            <p>&copy; 2025 Lu Lab - Oncology Drug Response Research. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.85em;">Advancing precision oncology through computational innovation</p>
         </footer>
     </div>
 
